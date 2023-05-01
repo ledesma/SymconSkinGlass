@@ -1,0 +1,91 @@
+/* --------------------------
+   Slider
+   -------------------------- */
+/* Slider Background */
+.ipsCategory > .container .content .visual > .slider {
+  margin-right: 63px !important;
+  margin-left: -60px;
+  width: calc(100% - 50px);
+}
+.ipsCategory > .container .content .visual > .slider > div {
+  /* Slider Bar */
+  /* Slider Text */
+}
+.ipsCategory > .container .content .visual > .slider > div > .background {
+  height: 1px;
+  border-top: 1px solid #747474;
+  margin-top: 7px !important;
+  left: 20px !important;
+  right: 0 !important;
+  width: auto !important;
+}
+.ipsCategory > .container .content .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23808080" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsCategory > .container .content .visual > .slider > div > .bar {
+  padding: 0 8px 0 17px !important;
+  box-sizing: border-box;
+  height: 20px !important;
+  top: 9px !important;
+  left: 10px !important;
+  right: -8px !important;
+}
+.ipsCategory > .container .content .visual > .slider > div > .text {
+  margin-right: -60px;
+  right: 2px;
+}
+.ipsCategory > .container .content > [class*="slider.text=hide"].icon ~ .visual > .slider > div > .text {
+  color: transparent;
+}
+
+.ipsContainer .content [class*="slider.type=hue"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23808080" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=hue"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #ff0000 0%, #ffff00 16%, #00ff00 33%, #00ffff 50%, #0000ff 66%, #ff00ff 84%, #ff0000 100%);
+}
+.ipsContainer .content [class*="slider.type=saturation"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23808080" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=saturation"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #ffffff 0%, #000000 100%);
+}
+.ipsContainer .content [class*="slider.type=brightness"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23808080" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=brightness"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #000000 0%, #ffffff 100%);
+}
+.ipsContainer .content [class*="slider.type=red"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="red" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=red"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #f0f0f0 0%, #ff0000 100%);
+}
+.ipsContainer .content [class*="slider.type=green"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="green" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=green"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #f0f0f0 0%, #00ff00 100%);
+}
+.ipsContainer .content [class*="slider.type=blue"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="blue" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=blue"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #f0f0f0 0%, #0000ff 100%);
+}
+.ipsContainer .content [class*="slider.type=yellow"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="yellow" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=colortemp"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23808080" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=colortemp"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #ffd000 0%, #d0d0d0 50%, #00d0ff 100%);
+}
+.ipsContainer .content [class*="slider.type=white"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23F0F0F0" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content > [class*="slider.type=scale10"].icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 10%, transparent 10%, transparent 11%, rgba(0, 0, 0, 0.24) 11%, rgba(0, 0, 0, 0.24) 20%, transparent 20%, transparent 21%, rgba(0, 0, 0, 0.24) 21%, rgba(0, 0, 0, 0.24) 30%, transparent 30%, transparent 31%, rgba(0, 0, 0, 0.24) 31%, rgba(0, 0, 0, 0.24) 40%, transparent 40%, transparent 41%, rgba(0, 0, 0, 0.24) 41%, rgba(0, 0, 0, 0.24) 50%, transparent 50%, transparent 51%, rgba(0, 0, 0, 0.24) 51%, rgba(0, 0, 0, 0.24) 60%, transparent 60%, transparent 61%, rgba(0, 0, 0, 0.24) 61%, rgba(0, 0, 0, 0.24) 70%, transparent 70%, transparent 71%, rgba(0, 0, 0, 0.24) 71%, rgba(0, 0, 0, 0.24) 80%, transparent 80%, transparent 81%, rgba(0, 0, 0, 0.24) 81%, rgba(0, 0, 0, 0.24) 90%, transparent 90%, transparent 91%, rgba(0, 0, 0, 0.24) 91%, rgba(0, 0, 0, 0.24) 100%);
+}/*# sourceMappingURL=slider.css.map */

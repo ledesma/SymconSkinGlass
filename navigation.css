@@ -1,0 +1,39 @@
+.ipsTabPane > .navigation {
+  height: 42px;
+  color: white;
+  border-top: solid 1px #2B2A28;
+  border-bottom: solid 1px #3767cf;
+  background: #2B2A28;
+}
+.ipsTabPane > .navigation > .scroll {
+  height: 42px;
+  padding: 0px 0px;
+}
+.ipsTabPane > .navigation > .scroll > .buttons {
+  height: 42px;
+}
+.ipsTabPane > .navigation > .scroll > .buttons > div {
+  line-height: 42px;
+  height: 42px;
+  border-left: dotted 1px rgba(255, 255, 255, 0.55);
+}
+.ipsTabPane > .navigation > .scroll > .buttons > div.active {
+  background: #3767cf;
+}
+.ipsTabPane > .navigation > .scroll > .buttons > div .icon {
+  filter: none;
+  padding-top: 10px;
+}
+.ipsTabPane > .navigation .widgets > div {
+  line-height: 42px;
+  height: 42px;
+}
+.ipsTabPane > .content {
+  top: 44px;
+}
+
+.ipsContentChanger > .navigation {
+  border-top: solid 1px #2B2A28;
+  border-bottom: solid 1px #3767cf;
+  background: #2B2A28;
+}/*# sourceMappingURL=navigation.css.map */

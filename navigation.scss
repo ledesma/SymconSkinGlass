@@ -1,0 +1,53 @@
+$navcolor_bg_active: #3767cf;
+$navcolor_bg_normal: #2B2A28;
+
+.ipsTabPane {
+
+
+    > .navigation {
+        height: 42px;
+        color: white;
+        border-top: solid 1px $navcolor_bg_normal;
+        border-bottom: solid 1px $navcolor_bg_active;
+        background: $navcolor_bg_normal; 
+
+        > .scroll {
+            height: 42px;
+            padding: 0px 0px;
+
+            > .buttons {
+                height: 42px;
+                > div {
+                    line-height: 42px; 
+                    height: 42px;
+                    border-left: dotted 1px rgba(255, 255, 255, .55);
+
+                    &.active {
+                        background: $navcolor_bg_active;
+                    }
+
+                    .icon {
+                        filter: none;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+        .widgets > div {
+            line-height: 42px; 
+            height: 42px;
+        }
+    }
+
+    > .content {
+        top: 44px;
+    }
+
+}
+
+.ipsContentChanger > .navigation {
+	border-top: solid 1px $navcolor_bg_normal;
+	border-bottom: solid 1px $navcolor_bg_active;
+	background: $navcolor_bg_normal; 
+}
+

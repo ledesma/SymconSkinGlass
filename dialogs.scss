@@ -1,0 +1,119 @@
+/* 
+ * ipsDialog
+ */
+ .ipsDialog	> div {
+	background-color: rgba(255, 255, 255, .55) !important;
+    border-radius: 5px !important;
+    border: none;
+    color: #747474 !important;
+	box-shadow: 5px 7px 5px -5px rgb(182, 182, 182); 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);    
+}
+.ipsDialog	> div,	
+.ipsNotification {
+	box-shadow: 5px 7px 5px -5px rgb(182, 182, 182); 
+}
+.ipsDialog > div > .title {
+	margin-right: 30px; 
+}
+
+/* ipsEnumDialog */
+.ipsDialog.ipsEnumDialog > div > div.content {
+	margin: 10px 0; 
+}		
+	
+/* ipsEventDialog */
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .dayContainer > .day.active ,
+.ipsDialog .upDownSpinner > .scroll > .values > .active {
+	color: #3aa9ff; 
+}
+
+/* ipsSchedule Dialog */
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .linesContainer > .touchContainer > .sliderContainer > .slider {
+	background-image: none;
+	opacity: 0.6; 
+}	
+
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .linesContainer > .touchContainer > .sliderContainer > .slider:hover {
+    opacity: 0.8 !important; 
+}
+
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .timesContainer > .timeEntry {
+    position: absolute;
+    text-align: center;
+    margin: 0 !important;
+    width: 20%; 
+}
+    
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .timesContainer > .timeEntry:nth-child(2) {
+    left: 20.5%; 
+}
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .timesContainer > .timeEntry:nth-child(3) {
+    left: 41%; 
+}
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .timesContainer > .timeEntry:nth-child(4) {
+    left: 61.5%; 
+}
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .timesContainer > .timeEntry:nth-child(5) {
+    left: 82%; 
+}
+
+/* FIXME: this is currently set hardcoded in the style - why? */
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .scheduleDayContainer > .day div {
+    padding: 3px 3px 1px !important;
+
+}
+
+.ipsDialog.ipsScheduleEntryDialog .statusSelectBox > li:hover,
+.ipsDialog.ipsScheduleEntryDialog .statusSelectBox > li.active {
+    color: black; 
+}
+
+/* ipsInstancePopup dialog */	
+/* FIXME: try this with more complex dialogs! */
+.ipsInstancePopup > div > .content > .ipsCategory > .ipsContainer {
+	box-shadow: 5px 7px 5px -5px rgb(182, 182, 182); 
+}
+
+/* ipsCircleSlider dialog */
+
+/* FIXME: how to style save dialog  */
+.ipsDialog.ipsCirclesliderDialog .backgroundStripesCircle {
+	fill: none;
+	stroke: #a5a5a5; 
+}
+.ipsDialog.ipsCirclesliderDialog .backgroundCircle {
+	fill: white;
+	stroke: #ccc; 
+}
+.ipsDialog.ipsCirclesliderDialog svg > text {
+	fill: #3aa9ff; 
+}
+.ipsDialog.ipsCirclesliderDialog .sliderHandle {
+    fill: rgba(58,169,255, 0.4);
+    stroke: rgba(58,169,255, 0.2);
+    stroke-width: 1px; 
+}
+.ipsDialog.ipsCirclesliderDialog .sliderHandle:active,
+.ipsDialog.ipsCirclesliderDialog .sliderHandle:hover {
+    fill: rgba(58,169,255, 0.7); 
+}
+.ipsDialog.ipsCirclesliderDialog .preselectLabel.saveMode:after {
+	content: '?'; 
+}
+
+/* instead of opacity use highlight colour */
+.ipsDialog.ipsChartDialog  >  div  >  div  >  div {
+	opacity: 1 !important;  
+}
+.ipsDialog.ipsChartDialog  >  div  >  div  >  div.active,
+.ipsDialog.ipsChartDialog  >  div  >  div  >  div:hover {
+	color: #3aa9ff !important; 
+}
+  
+/* prevent title from overlapping chart-options */
+.ipsDialog.ipsChartDialog  >  div  >  .title {
+    width: calc(100% - 345px);
+    font-size: 24px; 
+}

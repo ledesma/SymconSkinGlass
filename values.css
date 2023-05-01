@@ -1,0 +1,197 @@
+/* --------------------------
+    Werte
+    -------------------------- */
+/* Label */
+.ipsCategory > .container .content .title {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.ipsCategory > .container .content .visual {
+  /* Werte */
+  /* Rahmen */
+}
+.ipsCategory > .container .content .visual > .text {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: normal;
+  font-size: 1em;
+  font-weight: normal;
+}
+.ipsCategory > .container .content .visual > .text input[type=text] {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: normal;
+  font-size: 1em;
+}
+.ipsCategory > .container .content .visual > .enum,
+.ipsCategory > .container .content .visual > .selector {
+  padding: 0px;
+  margin-right: 0px;
+  line-height: 1.8em;
+}
+.ipsCategory > .container .content .visual > .enum:before,
+.ipsCategory > .container .content .visual > .selector:before {
+  background: none;
+  border-radius: 16px;
+  content: "";
+  top: 0.25em;
+  right: 1px;
+  left: 2px;
+  height: 1.3em;
+  position: absolute;
+  box-shadow: inset 0 1px 1px #9E9E9E, 0 1px 1px #9E9E9E;
+  opacity: 0.74;
+}
+.ipsCategory > .container .content .visual > .enum:before:hover,
+.ipsCategory > .container .content .visual > .selector:before:hover {
+  opacity: 1;
+}
+.ipsCategory > .container .content .visual > .enum > div,
+.ipsCategory > .container .content .visual > .selector > div {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: normal;
+  font-size: 1em;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 1px 0px 2px 2px;
+  padding: 0px 0.5em 0px 0.5em;
+  border-radius: 16px;
+  color: #000000;
+  background: none;
+  box-shadow: none;
+  border-width: 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  opacity: 0.74;
+}
+.ipsCategory > .container .content .visual > .enum > div.selected,
+.ipsCategory > .container .content .visual > .selector > div.selected {
+  background: none;
+  color: #FFFFFF;
+  background-color: #aaaaaa;
+  opacity: 1 !important;
+  background-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><rect fill='%23aaa' x='0' y='0' width='100%' height='100%'/></svg>");
+  background-size: cover;
+}
+.ipsCategory > .container .content .visual > .enum > div:not(.selected),
+.ipsCategory > .container .content .visual > .selector > div:not(.selected) {
+  min-height: 1.3em;
+  line-height: 1.3em;
+}
+.ipsCategory > .container .content .visual > .enum > div:hover,
+.ipsCategory > .container .content .visual > .selector > div:hover {
+  color: #FFFFFF;
+  background: #808080;
+  opacity: 0.74;
+  border-radius: 16px;
+  opacity: 1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+  background-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><rect fill='%23aaa' x='0' y='0' width='100%' height='100%'/></svg>");
+  background-size: cover;
+}
+
+.ipsCategory > .container .extended > .textBox > textarea {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: normal;
+  font-size: 1em;
+}
+.ipsCategory > .container .extended > .textBox > div {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: normal;
+  font-size: 1em;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 1px 0px 2px 2px;
+  padding: 0px 0.5em 0px 0.5em;
+  border-radius: 16px;
+  color: #000000;
+  background: none;
+  box-shadow: none;
+  border-width: 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  opacity: 0.74;
+}
+
+/* ... link Platz freihalten */
+.ipsContainer > .content > [class*="link.show=true"].icon ~ .visual > .enum,
+.ipsContainer > .content > [class*="link.show=true"].icon ~ .visual > .selectorv,
+.ipsContainer > .content > [class*="link.show=true"].icon ~ .visual > .text {
+  right: 36px;
+}
+
+/* feste Width */
+.ipsContainer > .content > [class*="ele.width=32px"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.width=32px"].icon ~ .visual > .selector > div {
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+}
+
+.ipsContainer > .content > [class*="ele.width=48px"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.width=48px"].icon ~ .visual > .selector > div {
+  min-width: 48px;
+  width: 48px;
+}
+
+.ipsContainer > .content > [class*="ele.width=64px"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.width=64px"].icon ~ .visual > .selector > div {
+  min-width: 64px;
+  width: 64px;
+}
+
+.ipsContainer > .content > [class*="ele.width=80px"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.width=80px"].icon ~ .visual > .selector > div {
+  min-width: 80px;
+  width: 80px;
+}
+
+.ipsContainer > .content > [class*="ele.width=96px"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.width=96px"].icon ~ .visual > .selector > div {
+  min-width: 96px;
+  width: 96px;
+}
+
+/* Selector */
+/* "<" und "  >  " ohne border-bottom */
+/* Selector - Werte, selektiert */
+/* Sonderfall: enum hat nur genau einen Wert, dann als Button darstellen
+                    enum soll als Btn dargestellt werden  */
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .enum::before,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .selector::before {
+  opacity: 0;
+}
+
+.ipsCategory > .container .content .visual > .enum > div:nth-child(2):last-child.selected,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .selector > div {
+  background: #9E9E9E;
+  border-radius: 2px;
+  color: #FFFFFF;
+  height: 30px;
+  opacity: 1;
+}
+
+.ipsCategory > .container .content .visual > .enum > div:nth-child(2):last-child.selected:hover,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .enum > div:hover,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .selector > div:hover {
+  border-radius: 2px;
+}
+
+.ipsCategory > .container .content .visual > .enum > div:nth-child(2):last-child.selected::before,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .enum > div:hover,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .selector > div:hover {
+  border-radius: 2px;
+}/*# sourceMappingURL=values.css.map */

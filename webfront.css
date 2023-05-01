@@ -1,0 +1,659 @@
+@charset "UTF-8";
+/* 
+ * ipsDialog
+ */
+.ipsDialog > div {
+  background-color: rgba(255, 255, 255, 0.55) !important;
+  border-radius: 5px !important;
+  border: none;
+  color: #747474 !important;
+  box-shadow: 5px 7px 5px -5px rgb(182, 182, 182);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.ipsDialog > div,
+.ipsNotification {
+  box-shadow: 5px 7px 5px -5px rgb(182, 182, 182);
+}
+
+.ipsDialog > div > .title {
+  margin-right: 30px;
+}
+
+/* ipsEnumDialog */
+.ipsDialog.ipsEnumDialog > div > div.content {
+  margin: 10px 0;
+}
+
+/* ipsEventDialog */
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .dayContainer > .day.active,
+.ipsDialog .upDownSpinner > .scroll > .values > .active {
+  color: #3aa9ff;
+}
+
+/* ipsSchedule Dialog */
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .linesContainer > .touchContainer > .sliderContainer > .slider {
+  background-image: none;
+  opacity: 0.6;
+}
+
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .linesContainer > .touchContainer > .sliderContainer > .slider:hover {
+  opacity: 0.8 !important;
+}
+
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .timesContainer > .timeEntry {
+  position: absolute;
+  text-align: center;
+  margin: 0 !important;
+  width: 20%;
+}
+
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .timesContainer > .timeEntry:nth-child(2) {
+  left: 20.5%;
+}
+
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .timesContainer > .timeEntry:nth-child(3) {
+  left: 41%;
+}
+
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .timesContainer > .timeEntry:nth-child(4) {
+  left: 61.5%;
+}
+
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .timesContainer > .timeEntry:nth-child(5) {
+  left: 82%;
+}
+
+/* FIXME: this is currently set hardcoded in the style - why? */
+.ipsDialog.ipsEventDialog > div > .content > .outerCenter > .center > .scheduleDayContainer > .day div {
+  padding: 3px 3px 1px !important;
+}
+
+.ipsDialog.ipsScheduleEntryDialog .statusSelectBox > li:hover,
+.ipsDialog.ipsScheduleEntryDialog .statusSelectBox > li.active {
+  color: black;
+}
+
+/* ipsInstancePopup dialog */
+/* FIXME: try this with more complex dialogs! */
+.ipsInstancePopup > div > .content > .ipsCategory > .ipsContainer {
+  box-shadow: 5px 7px 5px -5px rgb(182, 182, 182);
+}
+
+/* ipsCircleSlider dialog */
+/* FIXME: how to style save dialog  */
+.ipsDialog.ipsCirclesliderDialog .backgroundStripesCircle {
+  fill: none;
+  stroke: #a5a5a5;
+}
+
+.ipsDialog.ipsCirclesliderDialog .backgroundCircle {
+  fill: white;
+  stroke: #ccc;
+}
+
+.ipsDialog.ipsCirclesliderDialog svg > text {
+  fill: #3aa9ff;
+}
+
+.ipsDialog.ipsCirclesliderDialog .sliderHandle {
+  fill: rgba(58, 169, 255, 0.4);
+  stroke: rgba(58, 169, 255, 0.2);
+  stroke-width: 1px;
+}
+
+.ipsDialog.ipsCirclesliderDialog .sliderHandle:active,
+.ipsDialog.ipsCirclesliderDialog .sliderHandle:hover {
+  fill: rgba(58, 169, 255, 0.7);
+}
+
+.ipsDialog.ipsCirclesliderDialog .preselectLabel.saveMode:after {
+  content: "?";
+}
+
+/* instead of opacity use highlight colour */
+.ipsDialog.ipsChartDialog > div > div > div {
+  opacity: 1 !important;
+}
+
+.ipsDialog.ipsChartDialog > div > div > div.active,
+.ipsDialog.ipsChartDialog > div > div > div:hover {
+  color: #3aa9ff !important;
+}
+
+/* prevent title from overlapping chart-options */
+.ipsDialog.ipsChartDialog > div > .title {
+  width: calc(100% - 345px);
+  font-size: 24px;
+}
+
+.ipsTabPane > .navigation {
+  height: 42px;
+  color: white;
+  border-top: solid 1px #2B2A28;
+  border-bottom: solid 1px #3767cf;
+  background: #2B2A28;
+}
+.ipsTabPane > .navigation > .scroll {
+  height: 42px;
+  padding: 0px 0px;
+}
+.ipsTabPane > .navigation > .scroll > .buttons {
+  height: 42px;
+}
+.ipsTabPane > .navigation > .scroll > .buttons > div {
+  line-height: 42px;
+  height: 42px;
+  border-left: dotted 1px rgba(255, 255, 255, 0.55);
+}
+.ipsTabPane > .navigation > .scroll > .buttons > div.active {
+  background: #3767cf;
+}
+.ipsTabPane > .navigation > .scroll > .buttons > div .icon {
+  filter: none;
+  padding-top: 10px;
+}
+.ipsTabPane > .navigation .widgets > div {
+  line-height: 42px;
+  height: 42px;
+}
+.ipsTabPane > .content {
+  top: 44px;
+}
+
+.ipsContentChanger > .navigation {
+  border-top: solid 1px #2B2A28;
+  border-bottom: solid 1px #3767cf;
+  background: #2B2A28;
+}
+
+/* --------------------------
+   Slider
+   -------------------------- */
+/* Slider Background */
+.ipsCategory > .container .content .visual > .slider {
+  margin-right: 63px !important;
+  margin-left: -60px;
+  width: calc(100% - 50px);
+}
+.ipsCategory > .container .content .visual > .slider > div {
+  /* Slider Bar */
+  /* Slider Text */
+}
+.ipsCategory > .container .content .visual > .slider > div > .background {
+  height: 1px;
+  border-top: 1px solid #747474;
+  margin-top: 7px !important;
+  left: 20px !important;
+  right: 0 !important;
+  width: auto !important;
+}
+.ipsCategory > .container .content .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23808080" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsCategory > .container .content .visual > .slider > div > .bar {
+  padding: 0 8px 0 17px !important;
+  box-sizing: border-box;
+  height: 20px !important;
+  top: 9px !important;
+  left: 10px !important;
+  right: -8px !important;
+}
+.ipsCategory > .container .content .visual > .slider > div > .text {
+  margin-right: -60px;
+  right: 2px;
+}
+.ipsCategory > .container .content > [class*="slider.text=hide"].icon ~ .visual > .slider > div > .text {
+  color: transparent;
+}
+
+.ipsContainer .content [class*="slider.type=hue"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23808080" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=hue"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #ff0000 0%, #ffff00 16%, #00ff00 33%, #00ffff 50%, #0000ff 66%, #ff00ff 84%, #ff0000 100%);
+}
+.ipsContainer .content [class*="slider.type=saturation"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23808080" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=saturation"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #ffffff 0%, #000000 100%);
+}
+.ipsContainer .content [class*="slider.type=brightness"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23808080" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=brightness"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #000000 0%, #ffffff 100%);
+}
+.ipsContainer .content [class*="slider.type=red"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="red" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=red"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #f0f0f0 0%, #ff0000 100%);
+}
+.ipsContainer .content [class*="slider.type=green"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="green" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=green"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #f0f0f0 0%, #00ff00 100%);
+}
+.ipsContainer .content [class*="slider.type=blue"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="blue" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=blue"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #f0f0f0 0%, #0000ff 100%);
+}
+.ipsContainer .content [class*="slider.type=yellow"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="yellow" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=colortemp"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23808080" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content [class*="slider.type=colortemp"] .icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, #ffd000 0%, #d0d0d0 50%, #00d0ff 100%);
+}
+.ipsContainer .content [class*="slider.type=white"] .icon ~ .visual > .slider > div > .bar {
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="%23F0F0F0" cx="10" cy="10"  fill-opacity="0.8" class="sliderHandle" r="9"></circle></svg>') no-repeat right !important;
+}
+.ipsContainer .content > [class*="slider.type=scale10"].icon ~ .visual > .slider > div > .background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 10%, transparent 10%, transparent 11%, rgba(0, 0, 0, 0.24) 11%, rgba(0, 0, 0, 0.24) 20%, transparent 20%, transparent 21%, rgba(0, 0, 0, 0.24) 21%, rgba(0, 0, 0, 0.24) 30%, transparent 30%, transparent 31%, rgba(0, 0, 0, 0.24) 31%, rgba(0, 0, 0, 0.24) 40%, transparent 40%, transparent 41%, rgba(0, 0, 0, 0.24) 41%, rgba(0, 0, 0, 0.24) 50%, transparent 50%, transparent 51%, rgba(0, 0, 0, 0.24) 51%, rgba(0, 0, 0, 0.24) 60%, transparent 60%, transparent 61%, rgba(0, 0, 0, 0.24) 61%, rgba(0, 0, 0, 0.24) 70%, transparent 70%, transparent 71%, rgba(0, 0, 0, 0.24) 71%, rgba(0, 0, 0, 0.24) 80%, transparent 80%, transparent 81%, rgba(0, 0, 0, 0.24) 81%, rgba(0, 0, 0, 0.24) 90%, transparent 90%, transparent 91%, rgba(0, 0, 0, 0.24) 91%, rgba(0, 0, 0, 0.24) 100%);
+}
+
+/* --------------------------
+    Werte
+    -------------------------- */
+/* Label */
+.ipsCategory > .container .content .title {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.ipsCategory > .container .content .visual {
+  /* Werte */
+  /* Rahmen */
+}
+.ipsCategory > .container .content .visual > .text {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: normal;
+  font-size: 1em;
+  font-weight: normal;
+}
+.ipsCategory > .container .content .visual > .text input[type=text] {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: normal;
+  font-size: 1em;
+}
+.ipsCategory > .container .content .visual > .enum,
+.ipsCategory > .container .content .visual > .selector {
+  padding: 0px;
+  margin-right: 0px;
+  line-height: 1.8em;
+}
+.ipsCategory > .container .content .visual > .enum:before,
+.ipsCategory > .container .content .visual > .selector:before {
+  background: none;
+  border-radius: 16px;
+  content: "";
+  top: 0.25em;
+  right: 1px;
+  left: 2px;
+  height: 1.3em;
+  position: absolute;
+  box-shadow: inset 0 1px 1px #9E9E9E, 0 1px 1px #9E9E9E;
+  opacity: 0.74;
+}
+.ipsCategory > .container .content .visual > .enum:before:hover,
+.ipsCategory > .container .content .visual > .selector:before:hover {
+  opacity: 1;
+}
+.ipsCategory > .container .content .visual > .enum > div,
+.ipsCategory > .container .content .visual > .selector > div {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: normal;
+  font-size: 1em;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 1px 0px 2px 2px;
+  padding: 0px 0.5em 0px 0.5em;
+  border-radius: 16px;
+  color: #000000;
+  background: none;
+  box-shadow: none;
+  border-width: 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  opacity: 0.74;
+}
+.ipsCategory > .container .content .visual > .enum > div.selected,
+.ipsCategory > .container .content .visual > .selector > div.selected {
+  background: none;
+  color: #FFFFFF;
+  background-color: #aaaaaa;
+  opacity: 1 !important;
+  background-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><rect fill='%23aaa' x='0' y='0' width='100%' height='100%'/></svg>");
+  background-size: cover;
+}
+.ipsCategory > .container .content .visual > .enum > div:not(.selected),
+.ipsCategory > .container .content .visual > .selector > div:not(.selected) {
+  min-height: 1.3em;
+  line-height: 1.3em;
+}
+.ipsCategory > .container .content .visual > .enum > div:hover,
+.ipsCategory > .container .content .visual > .selector > div:hover {
+  color: #FFFFFF;
+  background: #808080;
+  opacity: 0.74;
+  border-radius: 16px;
+  opacity: 1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+  background-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><rect fill='%23aaa' x='0' y='0' width='100%' height='100%'/></svg>");
+  background-size: cover;
+}
+
+.ipsCategory > .container .extended > .textBox > textarea {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: normal;
+  font-size: 1em;
+}
+.ipsCategory > .container .extended > .textBox > div {
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: normal;
+  font-size: 1em;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 1px 0px 2px 2px;
+  padding: 0px 0.5em 0px 0.5em;
+  border-radius: 16px;
+  color: #000000;
+  background: none;
+  box-shadow: none;
+  border-width: 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  opacity: 0.74;
+}
+
+/* ... link Platz freihalten */
+.ipsContainer > .content > [class*="link.show=true"].icon ~ .visual > .enum,
+.ipsContainer > .content > [class*="link.show=true"].icon ~ .visual > .selectorv,
+.ipsContainer > .content > [class*="link.show=true"].icon ~ .visual > .text {
+  right: 36px;
+}
+
+/* feste Width */
+.ipsContainer > .content > [class*="ele.width=32px"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.width=32px"].icon ~ .visual > .selector > div {
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+}
+
+.ipsContainer > .content > [class*="ele.width=48px"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.width=48px"].icon ~ .visual > .selector > div {
+  min-width: 48px;
+  width: 48px;
+}
+
+.ipsContainer > .content > [class*="ele.width=64px"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.width=64px"].icon ~ .visual > .selector > div {
+  min-width: 64px;
+  width: 64px;
+}
+
+.ipsContainer > .content > [class*="ele.width=80px"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.width=80px"].icon ~ .visual > .selector > div {
+  min-width: 80px;
+  width: 80px;
+}
+
+.ipsContainer > .content > [class*="ele.width=96px"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.width=96px"].icon ~ .visual > .selector > div {
+  min-width: 96px;
+  width: 96px;
+}
+
+/* Selector */
+/* "<" und "  >  " ohne border-bottom */
+/* Selector - Werte, selektiert */
+/* Sonderfall: enum hat nur genau einen Wert, dann als Button darstellen
+                    enum soll als Btn dargestellt werden  */
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .enum::before,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .selector::before {
+  opacity: 0;
+}
+
+.ipsCategory > .container .content .visual > .enum > div:nth-child(2):last-child.selected,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .enum > div,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .selector > div {
+  background: #9E9E9E;
+  border-radius: 2px;
+  color: #FFFFFF;
+  height: 30px;
+  opacity: 1;
+}
+
+.ipsCategory > .container .content .visual > .enum > div:nth-child(2):last-child.selected:hover,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .enum > div:hover,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .selector > div:hover {
+  border-radius: 2px;
+}
+
+.ipsCategory > .container .content .visual > .enum > div:nth-child(2):last-child.selected::before,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .enum > div:hover,
+.ipsContainer > .content > [class*="ele.style=btn"].icon ~ .visual > .selector > div:hover {
+  border-radius: 2px;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(Fonts/Roboto/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(Fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(Fonts/Roboto/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(Fonts/Roboto/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(Fonts/Roboto/Roboto-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+body {
+  font-family: "Roboto", "Arial Narrow", sans-serif;
+  font-size: 1em;
+}
+
+.icon,
+.iconSmall,
+.iconExtraSmall,
+.edit {
+  filter: invert(0.6);
+}
+
+div.ipsLogin,
+div.ipsWebFront {
+  color: black;
+  background: radial-gradient(ellipse at center, #afd0f1 0%, #6389af 100%);
+}
+
+.ipsCategory > .container.ipsInstance,
+.ipsCategory > .container.ipsVariable,
+.ipsCategory > .container.ipsEvent {
+  border: 0px;
+  box-shadow: 0px;
+  background-color: rgba(255, 255, 255, 0.65) !important;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.ipsCategory > .container.ipsVariable.ipsVariableProfile\[Alert\] {
+  background-color: rgba(255, 60, 0, 0.65) !important;
+}
+.ipsCategory > .container.ipsVariable.ipsVariableProfile\[Alert\] .content > .visual .text {
+  text-align: left;
+  padding-left: 100px;
+}
+.ipsCategory > .container.ipsVariable.ipsVariableProfile\[Alert\] .content > .title {
+  color: rgba(255, 255, 255, 0.5);
+}
+.ipsCategory > .container.ipsVariable.ipsVariableProfile\[Alert\] .icon {
+  filter: opacity(60%);
+}
+.ipsCategory .ipsCategory .container.hasChildren > .content > .title {
+  font-weight: 500;
+}
+
+.ipsCategory > .container .childContainers {
+  background-color: initial;
+  border: none;
+}
+.ipsCategory > .container .childContainers div {
+  border: none;
+}
+
+/* Minimale Breite der Buttons. Zentrierte Ausrichtung der Schrift */
+.ipsCategory > .container .content .visual > .enum > div,
+.ipsCategory > .container .content .visual > .selector > div,
+.ipsCategory > .container .extended > .textBox > div {
+  min-width: 50px;
+  text-align: center;
+}
+
+#garten {
+  background-image: url("img/garden.jpg");
+  background-size: cover;
+}
+
+#Licht_eg {
+  background-color: #536f83;
+  background-image: url("img/livingroom.jpg");
+  background-size: cover;
+  color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+}
+
+#root2 {
+  background-color: #832508;
+  background-image: url("img/bedroom.jpg");
+  background-size: cover;
+  background-blend-mode: screen;
+}
+
+#audio_video {
+  background-image: url("img/vinyl.jpg");
+  background-size: cover;
+}
+
+#Storen {
+  background-color: #9e6612;
+  background-image: url("img/blinds.jpg");
+  background-size: cover;
+  background-blend-mode: luminosity;
+}
+
+#weihnachten {
+  background-image: url("img/holiday.jpg");
+  background-size: cover;
+}
+
+#item2333 {
+  background-image: url("img/weather.jpg");
+  background-size: cover;
+}
+
+/* --------------------------
+    Überschriften
+    ipsContainer container nestedUneven ipsVariable
+-------------------------- */
+.ipsContainer > .content > [class*="title.width=32px"].icon + .title {
+  min-width: 32px;
+  width: 32px;
+}
+
+.ipsContainer > .content > [class*="title.width=64px"].icon + .title {
+  min-width: 64px;
+  width: 64px;
+}
+
+.ipsContainer > .content > [class*="title.width=128px"].icon + .title {
+  min-width: 128px;
+  width: 128px;
+}
+
+/* Container Überschriften */
+.ipsCategory > .ipsContainer > .content > .title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Zwischenüberschriften */
+.ipsContainer > .content > [class*="title.color=accent"].icon + .title {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------
+    Links und Buttons
+-------------------------- */
+.link {
+  background: none;
+}
+.link > div {
+  background-color: #9E9E9E;
+  display: block;
+  border-radius: 5px;
+  height: 32px !important;
+  margin: 2px 3px 2px 3px !important;
+  line-height: 32px !important;
+  background-position: 2px 3px !important;
+}
+
+.color {
+  padding: 0px 3px 4px 3px !important;
+}
+.color > div {
+  border-radius: 2px;
+  height: 24px !important;
+  border: solid 1px rgba(0, 0, 0, 0.2) !important;
+}
+
+.link:hover div,
+.color > div:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+}
+
+.ipsCategory > .container .content [class*="="].icon {
+  min-width: 0px;
+}/*# sourceMappingURL=webfront.css.map */

@@ -1,0 +1,199 @@
+@import "global.scss", "dialogs.scss", "navigation.scss", "slider.scss", "values.scss", "fonts.scss";
+
+body {
+    font-family: 'Roboto', 'Arial Narrow', sans-serif;
+    font-size  : 1.0em
+}
+
+.icon,
+.iconSmall,
+.iconExtraSmall,
+.edit {
+    filter: invert(0.6);
+}
+
+div.ipsLogin,
+div.ipsWebFront {
+    color     : black;
+    background: radial-gradient(ellipse at center, #afd0f1 0%, #6389af 100%);
+}
+
+.ipsCategory {
+
+    >.container.ipsInstance,
+    >.container.ipsVariable,
+    >.container.ipsEvent {
+        border    : 0px;
+        box-shadow: 0px;
+        @include glasspane;
+    }
+
+    >.container.ipsVariable.ipsVariableProfile\[Alert\] {
+        background-color: rgba(255, 60, 0, 0.65) !important;
+        .content {
+            > .visual .text {
+                text-align: left;
+                padding-left: 100px;
+            }
+            > .title {
+                color: rgba(255, 255, 255, 0.5);                
+            }
+        }
+        .icon {
+            filter: opacity(60%);
+        }
+    }
+    
+
+    .ipsCategory {
+        .container.hasChildren>.content>.title {
+            font-weight: 500;
+
+        }
+    }
+}
+
+.ipsCategory>.container .childContainers {
+    background-color: initial;
+    border          : none;
+
+    div {
+        border: none;
+    }
+}
+
+/* Minimale Breite der Buttons. Zentrierte Ausrichtung der Schrift */
+.ipsCategory>.container .content .visual>.enum>div,
+.ipsCategory>.container .content .visual>.selector>div,
+.ipsCategory>.container .extended>.textBox>div {
+    min-width : 50px;
+    text-align: center;
+}
+
+
+#garten {
+    background-image: url('img/garden.jpg');
+    background-size : cover;
+}
+
+#Licht_eg {
+    background-color     : #536f83;
+    background-image     : url('img/livingroom.jpg');
+    background-size      : cover;
+    color                : rgba(0, 0, 0, .75);
+    background-blend-mode: overlay;
+}
+
+#root2
+
+/* Licht OG*/
+    {
+    background-color     : #832508;
+    background-image     : url('img/bedroom.jpg');
+    background-size      : cover;
+    background-blend-mode: screen;
+}
+
+#audio_video {
+    background-image: url('img/vinyl.jpg');
+    background-size : cover;
+}
+
+#Storen {
+    background-color     : #9e6612;
+    background-image     : url('img/blinds.jpg');
+    background-size      : cover;
+    background-blend-mode: luminosity;
+}
+
+#weihnachten {
+    background-image: url('img/holiday.jpg');
+    background-size : cover;
+}
+
+#item2333
+
+/* Wetter */
+    {
+    background-image: url('img/weather.jpg');
+    background-size : cover;
+}
+
+
+/* --------------------------
+    Überschriften
+    ipsContainer container nestedUneven ipsVariable
+-------------------------- */
+
+.ipsContainer>.content>[class*='title.width=32px'].icon+.title {
+    min-width: 32px;
+    width    : 32px;
+}
+
+.ipsContainer>.content>[class*='title.width=64px'].icon+.title {
+    min-width: 64px;
+    width    : 64px;
+}
+
+.ipsContainer>.content>[class*='title.width=128px'].icon+.title {
+    min-width: 128px;
+    width    : 128px;
+}
+
+/* Container Überschriften */
+.ipsCategory>.ipsContainer>.content>.title {
+    font-size  : 1.1rem;
+    font-weight: 500;
+    color      : rgba(0, 0, 0, 0.5)
+        /*fch*/
+    ;
+}
+
+/* Zwischenüberschriften */
+.ipsContainer>.content>[class*='title.color=accent'].icon+.title {
+    font-size  : 0.9em;
+    font-weight: 500;
+    color      : rgba(0, 0, 0, 0.5);
+}
+
+
+/* --------------------------
+    Links und Buttons
+-------------------------- */
+.link {
+    background: none;
+
+    >div {
+        background-color   : #9E9E9E;
+        display            : block;
+        border-radius      : 5px;
+        height             : 32px !important;
+        margin             : 2px 3px 2px 3px !important;
+        line-height        : 32px !important;
+        background-position: 2px 3px !important;
+    }
+
+
+    // >.colorLink{
+    //     display: none !important; 
+    // }
+}
+
+.color {
+    padding: 0px 3px 4px 3px !important;
+
+    >div {
+        border-radius: 2px;
+        height       : 24px !important;
+        border       : solid 1px rgba(0, 0, 0, 0.2) !important;
+    }
+}
+
+.link:hover div,
+.color>div:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+}
+
+.ipsCategory>.container .content [class*='='].icon {
+    min-width: 0px;
+} 
